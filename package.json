@@ -1,0 +1,8 @@
+{
+    "name": "compilerCourseAel",
+    "version": "0.0",
+    "main": "lessonOne.js",
+    "dependencies": {
+        "ohm": "0.10.4"
+    }
+}
