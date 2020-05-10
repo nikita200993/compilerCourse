@@ -1,6 +1,6 @@
 {
     "name": "compiler_course_ael",
-    "version": "0.0",
+    "version": "1.0.0",
     "main": "lessonOne.js",
     "dependencies": {
         "ohm": "0.10.4"
