@@ -1,5 +1,5 @@
 {
-    "name": "compilerCourseAel",
+    "name": "compiler_course_ael",
     "version": "0.0",
     "main": "lessonOne.js",
     "dependencies": {
