@@ -15,16 +15,14 @@ describe(
                 const match = aelGrammar.match(`
                     i = 3;
                     j = 0;
-                    print i;
                     while (i + 1) {
                         i = i - 1;
                         j = j + i;
                     }
-                    print j;
                 `);
                 expect(match.succeeded()).to.be.true;
                 interpreter(match).exec();
-                console.log(memory);
+                expect(memory.get("j")).equal(2);
             }
         )
     }
