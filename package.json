@@ -3,6 +3,6 @@
     "version": "1.0.0",
     "main": "lessonOne.js",
     "dependencies": {
-        "ohm": "0.10.4"
+        "ohm-js": "0.14.0"
     }
 }
