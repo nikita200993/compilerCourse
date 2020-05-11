@@ -3,6 +3,14 @@
     "version": "1.0.0",
     "main": "lessonOne.js",
     "dependencies": {
-        "ohm-js": "0.14.0"
+        "ohm-js": "0.14.0",
+        "mocha": "7.1.2",
+        "chai": "4.2.0"
+    },
+    "scripts": {
+        "test": "mocha --reporter spec"
+    },
+    "directories": {
+        "test": "test"
     }
 }
