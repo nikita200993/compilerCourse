@@ -1,5 +1,5 @@
 const Path = require("path");
-const aelGrammar = require(Path.resolve(__dirname, "lessonOne.js"));
+const aelGrammar = require(Path.resolve(__dirname, "grammars", "ael.js"));
 const {Program, Assignment, Print, While, Identifier, NumericalLiteral, ExpressionFactory} = require("./ast.js");
 /*
 Creating semantics that creates ast.

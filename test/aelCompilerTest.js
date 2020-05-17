@@ -1,9 +1,6 @@
 const expect = require("chai").expect;
-const aelGrammar = require("../lessonOne.js")
-const interpreterModule = require("../interpreter");
+const aelGrammar = require("../grammars/ael.js")
 const astBuilder = require("../compilerForAel")
-const interpreter = interpreterModule.extendedInterpreter;
-const memory = interpreterModule.memory;
 
 describe(
     "aelCompilerTest",
