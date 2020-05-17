@@ -5,31 +5,6 @@ const astBuilder = require("../compilerForAel")
 const interpreter = interpreterModule.extendedInterpreter;
 const memory = interpreterModule.memory;
 
-
-describe(
-    "aelInterpreter test.",
-    function ()
-    {
-        it(
-            "checking while loop...",
-            function ()
-            {
-                const match = aelGrammar.match(`
-                    i = 3;
-                    j = 0;
-                    while (i + 1) {
-                        i = i - 1;
-                        j = j + i;
-                    }
-                `);
-                expect(match.succeeded()).to.be.true;
-                interpreter(match).exec();
-                expect(memory.get("j")).equal(2);
-            }
-        )
-    }
-)
-
 describe(
     "aelCompilerTest",
     function ()
@@ -78,7 +53,7 @@ describe(
                 expect(() => ast.analyze()).not.Throw(Error);
                 const jsCode = ast.generateJavaScriptCode();
                 expect(jsCode).equal(
-`var _i = 3;
+                    `var _i = 3;
 while (_i > 0) {
     _i = _i - 1;
     var _j = _i ** _i;
@@ -109,7 +84,7 @@ console.log(_j);`)
                 expect(() => ast.analyze()).not.Throw(Error);
                 const jsCode = ast.generateJavaScriptCode();
                 expect(jsCode).equal(
-`var _i = 3;
+                    `var _i = 3;
 while (_i > 0) {
     _i = _i - 1;
     var _j = _i ** _i;
