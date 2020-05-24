@@ -55,7 +55,7 @@ Iki {
     prefixop    =  ~"--" "-" | not
   
     space      +=  comment
-    comment     =  "--" (~"\n" any)* "\n"
+    comment     =  "--" (~"\\n" any)* "\\n"
   }
 `)
 
